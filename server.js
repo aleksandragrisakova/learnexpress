@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   let fruits = [
   '67',
   'skibidi',
-  ]
+  ];
   res.render('index.njk', {name, age, fruits});
 });
 
@@ -25,6 +25,11 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
   res.render('contact.njk');
 });
+
+app.get('/form', (req, res) => {
+  res.render('form.njk');
+});
+
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

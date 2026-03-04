@@ -1,0 +1,75 @@
+{% extends 'partials/layout.njk' %}
+{% block title %}About{% endblock %}
+{% block content %}
+    <h1>Form</h1>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input name="name" type="text" class="form-control" id="name" placeholder="Write your name"></div>
+            <div class="mb-3">
+                <label for="bio" class="form-label">Bio</label>
+                <textarea name="bio" class="form-control" id="bio" rows="Write smth about you"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input name="age" type="number" min="0" max="200" class="form-control" id="age" placeholder="Write your age"></div>
+                <div class="mb-3">
+                    <label for="bday" class="form-label">Brith date</label>
+                    <input name="bday" type="date" class="form-control" id="age" placeholder="Write your birth date"></div>
+                    <div class="mb-3">
+                        <label for="favcolor" class="form-label">Favourite color</label>
+                        <input name="favcolor" type="color" class="form-control" id="favcolor"></div>
+                        <div class="mb-3">
+                            <label for="cool" class="form-label">Are you cool?</label>
+                            <input name="cool" type="checkbox" class="form-check-input" id="cool"></div>
+                            <div class="mb-3">
+                                <p>Choose your starter pokemon</p>
+                                <input name="pokemon" type="checkbox" class="form-check-input" id="bulba">
+                                    <label for="bulba" class="form-label">Bulbasaur</label>
+                                    <input name="pokemon" type="radio" class="form-check-input" id="squir">
+                                        <label for="squir" class="form-label">Squirtle</label>
+                                        <input name="pokemon" type="radio" class="form-check-input" id="charm">
+                                            <label for="charm" class="form-label">Charmander</label>
+                                            <input name="pokemon" type="radio" class="form-check-input" id="pika">
+                                                <label for="pika" class="form-label">Pikachu</label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <p>Food order</p>
+                                                <input name="food" type="checkbox" class="form-check-input" id="burger">
+                                                    <label for="burger" class="form-label">Burger</label>
+                                                    <input name="food" type="checkbox" class="form-check-input" id="pizza">
+                                                        <label for="pizza" class="form-label">Pizza</label>
+                                                        <input name="food" type="checkbox" class="form-check-input" id="sushi">
+                                                            <label for="sushi" class="form-label">Sushi</label>
+                                                            <input name="food" type="checkbox" class="form-check-input" id="taco">
+                                                                <label for="taco" class="form-label">Taco</label>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="name" class="form-label">Favourite fruit</label>
+                                                                <select name="fruit" id="fruit" class="form-select">
+                                                                    <option disabled="disabled" selected="selected">Select fruit</option>
+                                                                    <option>Banana</option>
+                                                                    <option>Cherry</option>
+                                                                    <option>Pineapple</option>
+                                                                    <option>Apple</option>
+                                                                    <option>Pear</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="lang" class="form-label">What languages do you know?</label>
+                                                                <select name="lang" multiple="multiple" id="lang" class="form-select" rows="5">
+                                                                    <option disabled="disabled" selected="selected">Select languages</option>
+                                                                    <option>Estonian</option>
+                                                                    <option>Russian</option>
+                                                                    <option>English</option>
+                                                                    <option>German</option>
+                                                                    <option>Latvian</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="like" class="form-label">How much do you like this form?</label>
+                                                                <input name="like" type="range" class="form-control" id="like"></div>
+                                                                <input type="submit" class="btn btn-primary" value="Send">
+                                                                    <button class="btn btn-primary">Send</button>
+                                                                </form>
+                                                            {% endblock %}
