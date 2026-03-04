@@ -9,7 +9,13 @@ nunjucks.configure('views', {
 });
 
 app.get('/', (req, res) => {
-  res.render('index.njk');
+  let name = 'Aleksandra';
+  let age = 17;
+  let fruits = [
+  '67',
+  'skibidi',
+  ]
+  res.render('index.njk', {name, age, fruits});
 });
 
 app.get('/about', (req, res) => {
