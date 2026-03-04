@@ -1,13 +1,23 @@
 import express from 'express';
+import nunjucks from 'nunjucks';
 const app = express();
 const port = 3000;
 
+nunjucks.configure('views', {
+  autoescape: true,
+  express: app
+});
+
 app.get('/', (req, res) => {
-  res.sendFile(import.meta.dirname + '/index.html');
+  res.render('index.njk');
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile(import.meta.dirname + '/about.html');
+  res.render('about.njk');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact.njk');
 });
 
 app.listen(port, () => {

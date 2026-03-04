@@ -6,14 +6,8 @@
     <title>Document</title>
   </head>
   <body>
-    <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/about">About us</a>
-      </li>
-    </ul>
-    <h1>Hello VM24</h1>
+    {% include 'partials/nav.njk'%}
+    {% block content%}
+    {% endblock %}
   </body>
 </html>
