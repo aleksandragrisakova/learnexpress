@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aleksandragrisakova/learnexpress1.git"
+    "url": "git+https://github.com/aleksandragrisakova/learnexpress.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aleksandragrisakova/learnexpress1/issues"
+    "url": "https://github.com/aleksandragrisakova/learnexpress/issues"
   },
-  "homepage": "https://github.com/aleksandragrisakova/learnexpress1#readme",
+  "homepage": "https://github.com/aleksandragrisakova/learnexpress#readme",
   "dependencies": {
     "express": "^5.2.1"
   },
