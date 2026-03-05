@@ -30,6 +30,13 @@ app.get('/form', (req, res) => {
   res.render('form.njk');
 });
 
+app.get('/answers', (req, res) => {
+  let answers = req.query;
+  answers.cool = answers.cool === 'on' ? true : false;
+  answers.age = parseInt(answers.age);
+  answers.like = parseInt(answers.like);
+  res.render('answers.njk' , answers);
+});
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

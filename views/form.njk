@@ -2,7 +2,7 @@
 {% block title %}About{% endblock %}
 {% block content %}
     <h1>Form</h1>
-    <form>
+    <form action="/answers">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input name="name" type="text" class="form-control" id="name" placeholder="Write your name"></div>
@@ -24,24 +24,24 @@
                             <input name="cool" type="checkbox" class="form-check-input" id="cool"></div>
                             <div class="mb-3">
                                 <p>Choose your starter pokemon</p>
-                                <input name="pokemon" type="checkbox" class="form-check-input" id="bulba">
+                                <input name="pokemon" type="checkbox" class="form-check-input" id="bulba" value="bulba">
                                     <label for="bulba" class="form-label">Bulbasaur</label>
-                                    <input name="pokemon" type="radio" class="form-check-input" id="squir">
+                                    <input name="pokemon" type="radio" class="form-check-input" id="squir" value="squir">
                                         <label for="squir" class="form-label">Squirtle</label>
-                                        <input name="pokemon" type="radio" class="form-check-input" id="charm">
+                                        <input name="pokemon" type="radio" class="form-check-input" id="charm" value="charm">
                                             <label for="charm" class="form-label">Charmander</label>
-                                            <input name="pokemon" type="radio" class="form-check-input" id="pika">
+                                            <input name="pokemon" type="radio" class="form-check-input" id="pika" value="pika">
                                                 <label for="pika" class="form-label">Pikachu</label>
                                             </div>
                                             <div class="mb-3">
                                                 <p>Food order</p>
-                                                <input name="food" type="checkbox" class="form-check-input" id="burger">
+                                                <input name="food" type="checkbox" class="form-check-input" id="burger" value="burger">
                                                     <label for="burger" class="form-label">Burger</label>
-                                                    <input name="food" type="checkbox" class="form-check-input" id="pizza">
+                                                    <input name="food" type="checkbox" class="form-check-input" id="pizza" value="pizza">
                                                         <label for="pizza" class="form-label">Pizza</label>
-                                                        <input name="food" type="checkbox" class="form-check-input" id="sushi">
+                                                        <input name="food" type="checkbox" class="form-check-input" id="sushi" value="sushi">
                                                             <label for="sushi" class="form-label">Sushi</label>
-                                                            <input name="food" type="checkbox" class="form-check-input" id="taco">
+                                                            <input name="food" type="checkbox" class="form-check-input" id="taco" value="taco">
                                                                 <label for="taco" class="form-label">Taco</label>
                                                             </div>
                                                             <div class="mb-3">
