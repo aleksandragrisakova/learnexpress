@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Nuustik",
+    "birthyear": 2018,
+    "gender": "Female",
+    "color": "black/white",
+    "eyes": "yellow",
+    "spayed": true
+  },
+  {
+    "name": "Kratt222",
+    "birthyear": 2023,
+    "gender": "Male",
+    "color": "black",
+    "eyes": "yellow",
+    "spayed": true,
+    "id": 2
+  },
+  {
+    "name": "Klutt555",
+    "birthyear": 2023,
+    "gender": "Male",
+    "color": "black",
+    "eyes": "yellow",
+    "spayed": true,
+    "id": 3
+  },
+  {
+    "name": "Pätu",
+    "birthyear": 2008,
+    "gender": "Male",
+    "color": "Yellow",
+    "eyes": "yellow",
+    "spayed": true,
+    "id": 4
+  },
+  {
+    "name": "Tondu",
+    "birthyear": 2005,
+    "gender": "Male",
+    "color": "black",
+    "eyes": "yellow",
+    "spayed": true,
+    "id": 7
+  }
+]

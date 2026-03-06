@@ -2,7 +2,7 @@
 {% block title %}About{% endblock %}
 {% block content %}
     <h1>Form</h1>
-    <form action="/answers">
+    <form action="/answers" method="POST">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input name="name" type="text" class="form-control" id="name" placeholder="Write your name"></div>
@@ -45,7 +45,7 @@
                                                                 <label for="taco" class="form-label">Taco</label>
                                                             </div>
                                                             <div class="mb-3">
-                                                                <label for="name" class="form-label">Favourite fruit</label>
+                                                                <label for="fruit" class="form-label">Favourite fruit</label>
                                                                 <select name="fruit" id="fruit" class="form-select">
                                                                     <option disabled="disabled" selected="selected">Select fruit</option>
                                                                     <option>Banana</option>
