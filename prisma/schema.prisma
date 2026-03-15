@@ -17,6 +17,6 @@ model Cat {
   gender    String
   color     String
   eyes      String
-  soayed    Boolean
+  spayed    Boolean
 }
 

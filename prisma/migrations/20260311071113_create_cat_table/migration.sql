@@ -6,5 +6,5 @@ CREATE TABLE "Cat" (
     "gender" TEXT NOT NULL,
     "color" TEXT NOT NULL,
     "eyes" TEXT NOT NULL,
-    "soayed" BOOLEAN NOT NULL
+    "spayed" BOOLEAN NOT NULL
 );
