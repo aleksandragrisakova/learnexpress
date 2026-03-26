@@ -1,15 +1,15 @@
-import express from 'express';
-import fs from 'fs';
+import express from "express";
+import fs from "fs";
 import { prisma } from "../lib/prisma.js";
 
 const router = express.Router();
 
 router.get("", async (req, res) => {
-let count = await prisma.cat.count();
+  let count = await prisma.cat.count();
   let perPage = 10;
   let pages = Math.ceil(count / perPage);
   let currentPage = parseInt(req.query.page ?? 1);
-  let skip = perPage * (currentPage-1);
+  let skip = perPage * (currentPage - 1);
   let cats = await prisma.cat.findMany({
     take: perPage,
     skip: skip,
@@ -17,8 +17,8 @@ let count = await prisma.cat.count();
   res.render("cats/index.njk", { cats, pages, currentPage });
 });
 
-router.get('/create', (req, res) => {
-  res.render('cats/create.njk');
+router.get("/create", (req, res) => {
+  res.render("cats/create.njk");
 });
 
 router.post("", async (req, res) => {
@@ -49,7 +49,7 @@ router.get("/edit", async (req, res) => {
   res.render("cats/edit.njk", { cat });
 });
 
-router.post("/edit",async (req, res) => {
+router.post("/edit", async (req, res) => {
   await prisma.cat.update({
     where: { id: parseInt(req.query.id) },
     data: {
@@ -64,7 +64,7 @@ router.post("/edit",async (req, res) => {
   res.redirect("/cats");
 });
 
-router.get("/delete",async (req, res) => {
+router.get("/delete", async (req, res) => {
   await prisma.cat.delete({
     where: { id: parseInt(req.query.id) },
   });
